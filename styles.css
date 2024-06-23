@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8f8f8;
+}
+
+main {
+    padding: 20px;
+}
+
+.desafios {
+    margin-bottom: 20px;
+}
+
+.desafio {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.desafio h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.desafio p {
+    margin-bottom: 15px;
+}
+
+.form-resposta {
+    margin-bottom: 15px;
+}
+
+.btn-desafio {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-desafio:hover {
+    background-color: #555;
+}
+
+.solucao {
+    display: none;
+    margin-top: 10px;
+}
+
+.solucao-texto {
+    color: #666;
+}
+
+/* Estilo para a seção de vídeos */
+.videos {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.video h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.video video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilo para a seção de fotos */
+.fotos {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.foto-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.foto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos gerais */
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .video, .foto {
+        width: 100%;
+    }
+}
+
+/* Estilos adicionais para os botões "Ver mais" e informações adicionais */
+.btn-info {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-info:hover {
+    background-color: #0056b3;
+}
+
+.info-desafio {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: none;
+}

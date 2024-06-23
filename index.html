@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios - Control Z</title>
+    <style>
+        /* Estilos específicos para o vídeo de carregamento */
+        #video-carregamento {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1000;
+            background-color: #000;
+            display: block; /* Garante que o vídeo seja visível */
+        }
+
+        /* Estilos para ocultar o conteúdo principal até que o vídeo termine */
+        main {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-carregamento" autoplay>
+        <source src="video-carregamento.mp4" type="video/mp4">
+        <!-- Caso precise de outros formatos de vídeo, adicione aqui -->
+        Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <header>
+        <h1>Desafios - Control Z</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="desafios">
+            <h2>Desafios de Investigação</h2>
+            
+            <div class="desafio">
+                <h3>Desafio 1: Identidade do Hacker</h3>
+                <p>Descubra a identidade do hacker que invadiu os sistemas da escola e vazou informações confidenciais.</p>
+                <form class="form-resposta" data-resposta="anonimus">
+                    <label for="resposta1">Sua resposta:</label>
+                    <input type="text" id="resposta1" name="resposta1" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="solucao">
+                    <p class="solucao-texto">A solução do desafio é...</p>
+                </div>
+                <div class="feedback">
+                    <p class="feedback-errado"></p>
+                </div>
+                <button class="btn-info" data-target="info1">Ver mais</button>
+                <div id="info1" class="info-desafio">
+                    <p>Aqui estão mais informações sobre o Desafio 1.</p>
+                    <p>Este desafio foca em descobrir a identidade do hacker responsável pelo ataque à escola.</p>
+                </div>
+            </div>
+            
+            <div class="desafio">
+                <h3>Desafio 2: Cúmplice Secreto</h3>
+                <p>Identifique quem foi o cúmplice que ajudou o hacker a executar o ataque cibernético.</p>
+                <form class="form-resposta" data-resposta="cúmplice">
+                    <label for="resposta2">Sua resposta:</label>
+                    <input type="text" id="resposta2" name="resposta2" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="solucao">
+                    <p class="solucao-texto">A solução do desafio é...</p>
+                </div>
+                <div class="feedback">
+                    <p class="feedback-errado"></p>
+                </div>
+                <button class="btn-info" data-target="info2">Ver mais</button>
+                <div id="info2" class="info-desafio">
+                    <p>Aqui estão mais informações sobre o Desafio 2.</p>
+                    <p>Este desafio envolve identificar quem foi o cúmplice que auxiliou o hacker durante o ataque cibernético.</p>
+                </div>
+            </div>
+            
+            <div class="desafio">
+                <h3>Desafio 3: Trajetória Digital</h3>
+                <p>Trace a trajetória digital do hacker para determinar como ele conseguiu acessar os sistemas da escola.</p>
+                <form class="form-resposta" data-resposta="trajetória">
+                    <label for="resposta3">Sua resposta:</label>
+                    <input type="text" id="resposta3" name="resposta3" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="solucao">
+                    <p class="solucao-texto">A solução do desafio é...</p>
+                </div>
+                <div class="feedback">
+                    <p class="feedback-errado"></p>
+                </div>
+                <button class="btn-info" data-target="info3">Ver mais</button>
+                <div id="info3" class="info-desafio">
+                    <p>Aqui estão mais informações sobre o Desafio 3.</p>
+                    <p>Este desafio requer traçar a trajetória digital do hacker para entender como ele conseguiu realizar o ataque cibernético.</p>
+                </div>
+            </div>
+            
+            <div class="desafio">
+                <h3>Desafio 4: Pistas Ocultas</h3>
+                <p>Encontre pistas ocultas nos arquivos de log para descobrir como o hacker conseguiu contornar as medidas de segurança.</p>
+                <form class="form-resposta" data-resposta="pistas">
+                    <label for="resposta4">Sua resposta:</label>
+                    <input type="text" id="resposta4" name="resposta4" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="solucao">
+                    <p class="solucao-texto">A solução do desafio é...</p>
+                </div>
+                <div class="feedback">
+                    <p class="feedback-errado"></p>
+                </div>
+                <button class="btn-info" data-target="info4">Ver mais</button>
+                <div id="info4" class="info-desafio">
+                    <p>Aqui estão mais informações sobre o Desafio 4.</p>
+                    <p>Este desafio envolve encontrar pistas ocultas nos arquivos de log para descobrir como o hacker conseguiu burlar as medidas de segurança da escola.</p>
+                </div>
+            </div>
+            
+            <div class="desafio">
+                <h3>Desafio 5: Mensagem Encriptada</h3>
+                <p>Decifre uma mensagem encriptada deixada pelo hacker para obter informações cruciais sobre seus próximos planos.</p>
+                <form class="form-resposta" data-resposta="mensagem">
+                    <label for="resposta5">Sua resposta:</label>
+                    <input type="text" id="resposta5" name="resposta5" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="solucao">
+                    <p class="solucao-texto">A solução do desafio é...</p>
+                </div>
+                <div class="feedback">
+                    <p class="feedback-errado"></p>
+                </div>
+                <button class="btn-info" data-target="info5">Ver mais</button>
+                <div id="info5" class="info-desafio">
+                    <p>Aqui estão mais informações sobre o Desafio 5.</p>
+                    <p>Este desafio requer decifrar uma mensagem encriptada para revelar informações importantes sobre os planos futuros do hacker.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const videoCarregamento = document.getElementById('video-carregamento');
+        const mainContent = document.querySelector('main');
+
+        // Quando o vídeo de carregamento terminar, exibe o conteúdo principal
+        videoCarregamento.addEventListener('ended', function() {
+            videoCarregamento.style.display = 'none'; // Esconde o vídeo de carregamento
+            mainContent.style.display = 'block'; // Exibe o conteúdo principal
+        });
+     <script>
+   <script> src="script.js"></script>
+</body>
+</html>
