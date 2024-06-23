@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    <video id="video-carregamento" autoplay>
+    <video id="video-carregamento" autoplay muted>
         <source src="video-carregamento.mp4" type="video/mp4">
         <!-- Caso precise de outros formatos de vídeo, adicione aqui -->
         Seu navegador não suporta vídeos HTML5.
@@ -163,16 +163,11 @@
         const videoCarregamento = document.getElementById('video-carregamento');
         const mainContent = document.querySelector('main');
 
-        // Verifica quando o vídeo está pronto para tocar
-        videoCarregamento.addEventListener('canplay', function() {
-            videoCarregamento.play(); // Inicia a reprodução automaticamente
-        });
-
         // Quando o vídeo de carregamento terminar, exibe o conteúdo principal
         videoCarregamento.addEventListener('ended', function() {
             videoCarregamento.style.display = 'none'; // Esconde o vídeo de carregamento
-            mainContent.style.display = 'block'; // Exibe o conteúdo principal});
-
+            mainContent.style.display = 'block'; // Exibe o conteúdo principal
+        });
     </script>
 
 </body>
